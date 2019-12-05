@@ -188,8 +188,8 @@ _testrun(){
             || [ "$_continue" = "N" ]; then
             _do "Exiting ..."
             exit
-        elif [ "$_manual" = "y" ] \
-            || [ "$_manual" = "Y" ]; then
+        elif [ "$_continue" = "y" ] \
+            || [ "$_continue" = "Y" ]; then
             break
         else
             clear
